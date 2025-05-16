@@ -1,64 +1,64 @@
 .field {
-    position: relative;
-    background-color: azure;
-    width: 800px;
-    height: 600px;
-    border: 2px solid #999;
-    /*margin: 200px 0 0 50px;*/ /* 表示位置を margin に変更（安全） */
+  position: relative;
+  background-color: azure;
+  width: 800px;
+  height: 600px;
+  border: 2px solid #999;
+  /*margin: 200px 0 0 50px;*/ /* 表示位置を margin に変更（安全） */
 }
 
 /* 棒の配置 - fieldの中に収める */
 .stick1, .stick2, .stick3 {
-    position: absolute;
-    background-color: brown;
-    width: 30px;
-    height: 300px;
-    top: 250px; /* field内に収まるよう調整（下すぎないように） */
+  position: absolute;
+  background-color: brown;
+  width: 30px;
+  height: 300px;
+  top: 250px; /* field内に収まるよう調整（下すぎないように） */
 }
 
 .stick1 {
-    left: 100px;
+  left: 100px;
 }
 .stick2 {
-    left: 385px;
+  left: 385px;
 }
 .stick3 {
-    left: 670px;
+  left: 670px;
 }
 
 /*中心位置は margin-left + width / 2 = 265*/
 
 .circle1, .circle2, .circle3 {
-    position: absolute;
-    display: table;
-    height: 50px;
-    border-radius: 10px;
-    text-align: center;
-    cursor: grab;
-    user-select: none;
+  position: absolute;
+  display: table;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: grab;
+  user-select: none;
 }
 
 .circle1 {
-    background-color: cornflowerblue;
-    width: 200px;
-    top: 500px;
-    left: 15px;
+  background-color: cornflowerblue;
+  width: 200px;
+  top: 500px;
+  left: 15px;
 }
 .circle2 {
-    background-color: orange;
-    width: 150px;
-    top: 450px;
-    left: 40px;
+  background-color: orange;
+  width: 150px;
+  top: 450px;
+  left: 40px;
 }
 .circle3 {
-    background-color: palegreen;
-    width: 100px;
-    top: 400px;
-    left: 65px;
+  background-color: palegreen;
+  width: 100px;
+  top: 400px;
+  left: 65px;
 }
 
 .circle1 div, .circle2 div, .circle3 div {
-    display: table-cell;
-    vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 

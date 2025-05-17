@@ -1,9 +1,60 @@
+label[for="diskRange"] {
+  display: inline-block;
+  margin-top: 11px;
+  vertical-align: middle;
+  font-size: 1.1em;
+} 
+
+#diskRange {
+  position: absolute;
+  margin-left: 20px;
+  margin-right: 20px;
+  top: 225px;
+}
+
+#diskCount {
+  position: absolute;
+  top: 224px;
+}
+
+#resetButton {
+  background: linear-gradient(135deg, #4a90e2, #357ABD);
+  color: white;
+  position: absolute;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+  top: 225px;
+  left: 300px;
+  width: 80px;
+} 
+
+#autoButton {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  color: white;
+  position: absolute;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+  top: 225px;
+  left: 430px;
+}
+
 .field {
   position: relative;
   background-color: azure;
-  width: 800px;
+  width: 1070px;
   height: 600px;
   border: 2px solid #999;
+  margin-top: 15px;
   /*margin: 200px 0 0 50px;*/ /* 表示位置を margin に変更（安全） */
 }
 
@@ -17,48 +68,37 @@
 }
 
 .stick1 {
-  left: 100px;
+  left: 200px;
 }
 .stick2 {
-  left: 385px;
+  left: 535px;
 }
 .stick3 {
-  left: 670px;
+  left: 870px;
 }
 
-/*中心位置は margin-left + width / 2 = 265*/
-
-.circle1, .circle2, .circle3 {
+[class^="circle"]{
   position: absolute;
-  display: table;
   height: 50px;
   border-radius: 10px;
+  text-align: 10px;
   text-align: center;
   cursor: grab;
   user-select: none;
+  display: table;
 }
 
-.circle1 {
-  background-color: cornflowerblue;
-  width: 200px;
-  top: 500px;
-  left: 15px;
-}
-.circle2 {
-  background-color: orange;
-  width: 150px;
-  top: 450px;
-  left: 40px;
-}
-.circle3 {
-  background-color: palegreen;
-  width: 100px;
-  top: 400px;
-  left: 65px;
-}
-
-.circle1 div, .circle2 div, .circle3 div {
+[class^="circle"] div {
   display: table-cell;
   vertical-align: middle;
+}
+
+.ground {
+  position: relative;
+  top: 550px;
+  width: 1070px;
+  height: 48px;
+  background: linear-gradient(to bottom, #e4c17a 30%, #d2a753 60%, #c8a24d 100%);
+  border-top: 2px solid blanchedalmond; /*地面の上の境界（砂のエッジ）*/  
 }
 

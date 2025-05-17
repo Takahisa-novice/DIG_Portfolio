@@ -7,7 +7,6 @@
   <meta name="theme-color" content="#000000">
   <title>ハノイの塔</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
 </head>
 
 <body>
@@ -16,15 +15,19 @@
   <p>3つの棒と大きさの異なる円盤を使ったパズルです。初期状態では、左側の棒に円盤が大きさ順に積み重なっています。
     目的は、全ての円盤を右側の棒に同じ順番で移動させることです。円盤を<font color="red">一度に1枚しか</font>動かせず、<font color="red">大きい円盤を小さい円盤の上</font>に置くことはできません。
   </p>
+  <label for="diskRange">円盤の数: <span id="diskCount">3</span></label>
+  <input type="range" id="diskRange" min="3" max="5" value="3">
+  <!-- ボタン -->
+  <button id="resetButton">リセット</button>
+  <button id="autoButton">自動ソルバー</button>
   <div class = "field">
     <div class="stick1"></div>
     <div class="stick2"></div>
     <div class="stick3"></div>
-    <div class="circle1" data-size="3"><div>1</div></div>
-    <div class="circle2" data-size="2"><div>2</div></div>
-    <div class="circle3" data-size="1"><div>3</div></div>
+    <div class="ground"></div>
   </div>
 
+  <script src="script.js"></script>
 </body>
 
 </html>
